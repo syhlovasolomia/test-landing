@@ -94,13 +94,26 @@
             <section>
             <h2>Sign up here</h2>
             <p>Leave your contacts here for us to contact you back for signing you in.</p>
-            <form action="https://echo.htmlacademy.ru" method="post">
-            <input type="date" name="date" value="2023-03-11">
-            <input type="date" name="time" value="10:00">
-            <input type="text" name="name" value="" 
+            <form action="https" method="post">
+            <p>
+            <label for="appointment-date">Date</label>
+            <input id="appointment-date" type="date" name="date" value="2023-03-11">
+            </p>
+            <p>
+            <label for="appointment-time">Time</label>
+            <input id="appointment-time" type="time" name="time" value="10:00">
+            </p>
+            <p>
+            <label for="appointment-name">Your Name</label>
+            <input id="appointment-name" type="text" name="name" value="" 
             placeholder="John">
-            <input type="tel" name="phone" value=""
+            </p>
+            <p>
+            <label for="appointment-phone">Your phone number</label>
+            <input id="appointment-phone" type="tel" name="phone" value=""
             placeholder="+442136379266">
+            </p>
+            <button type="submit">Send</button>
             </form>
             </section>
     </main>
@@ -123,8 +136,29 @@
     <section>
         <h2>Your profile</h2>
         <p>Input your login and password here.</p>
-        <!--ФОРМА-->
-        <button type="button">Close</button>
+        <form action="https" method="post">
+            <p>
+                <label for="user-login">Login</label>
+                <input id="user-login" type="email" name="login" placeholder="email@example.com">
+            </p>
+            <p>
+                <label for="user-password">Password</label>
+                <input id="user-password" type="password" name="password" placeholder="••••••••••••">
+            </p>
+            <p>
+                <input type="checkbox" name="remember" id="login-password-info">
+                <label for="login-password-info">
+                Remember me
+                </label>
+                <a href="#">I forgot my password!</a>
+            </p>
+        </form>
+        <button type="submit">
+            Log In
+        </button>
+        <button type="button">
+            Close
+        </button>
     </section>
 
     <section>
